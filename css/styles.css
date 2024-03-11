@@ -1,3 +1,11 @@
+#main p {
+    font-size: 16px; 
+    line-height: 1.5; 
+    text-align: left; 
+    margin-top: 20px; 
+    margin-bottom: 20px; 
+    font-family: Arial, sans-serif; 
+}
 h1{
     font-size: 40px;
     font-weight: bold;
@@ -78,6 +86,8 @@ h1{
     height: auto;
 }
 .skip-link {
+    color: white;
+    background-color: black;
     overflow: hidden;
     width: 0;
     height: 0;
@@ -123,7 +133,7 @@ nav ul li a:hover {
 
 .recipe-container{
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Equal width columns */
+    grid-template-columns: 1fr 1fr;
 
 }
 body{
@@ -133,9 +143,9 @@ body{
 
 }
 #main {
-    max-width: auto; /* Optimal reading width */
-    margin: 0 auto; /* Center align the main content */
-    background-color: #fff; /* White background for the main content */
+    max-width: auto;
+    margin: 0 auto; 
+    background-color: #fff; 
     padding: 20px;
     border-radius: 8px;
 }
@@ -147,4 +157,225 @@ body{
         display: none;
     }
 }
+@media (max-width: 600px) {
+    main img, main video {
+        border: 2px solid black;
+        padding: 5px; 
+        max-width: calc(100% - 20px); 
+        box-sizing: border-box; 
+        display: block;
+        margin: 0 auto; 
+    }
+    h1 {
+        font-size: 35px; 
+    }
+    .travel-grid {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); 
+    }
+    .travel-div h2 {
+        font-size: 35px; 
+    }
+    .travel-div p {
+        font-size: 18px; 
+    }
+    .photo {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
+    }
+    nav ul {
+        justify-content: space-around; 
+    }
 
+    nav ul li a {
+        padding: 5px 15px;
+        font-size: 14px; 
+    }
+    .travel-grid {
+        gap: 10px; 
+        padding: 10px; 
+        margin: 10px auto; 
+    }
+    .travel-grid img {
+        border: 2px solid #cccccc; 
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); 
+    }
+    .travel-div {
+        padding: 10px; 
+        border-radius: 5px; 
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); 
+    }
+    .travel-grid img:hover {
+        transform: scale(1.1); 
+    }
+    .travel-div h2 {
+        font-size: 30px; 
+        font-weight: bold; 
+    }
+    .travel-div p {
+        font-size: 16px; 
+    }
+    .travel-div img {
+        border: 2px solid #cccccc; 
+        box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1); 
+    }
+    h1{
+        font-size: 30px;
+        font-weight: bold;
+        text-align: center;
+        padding: 10px;
+    }
+    #main p{
+        border: 1px solid #ccc; 
+        background-color: #f9f9f9; 
+        padding: 20px;
+        box-shadow: 2px 2px 5px rgba(0,0,0,0.1); 
+        border-radius: 5px;
+    }
+    .photo{
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        padding: 5px;
+        gap: 2px;
+        border: 2px solid black;
+    }
+}
+@media (max-width: 600px) {
+    main img, main video {
+        border: 2px solid black;
+        padding: 5px; 
+        max-width: calc(100% - 20px); 
+        box-sizing: border-box; 
+        display: block;
+        margin: 0 auto; 
+    }
+    h1 {
+        font-size: 35px; 
+    }
+    .travel-grid {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); 
+    }
+    .travel-div h2 {
+        font-size: 35px; 
+    }
+    .travel-div p {
+        font-size: 18px; 
+    }
+    .photo {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
+    }
+    nav ul {
+        justify-content: space-around; 
+    }
+
+    nav ul li a {
+        padding: 5px 15px;
+        font-size: 14px; 
+    }
+    .travel-grid {
+        gap: 10px; 
+        padding: 10px; 
+        margin: 10px auto; 
+    }
+    .travel-grid img {
+        border: 2px solid #cccccc; 
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); 
+    }
+    .travel-div {
+        padding: 10px; 
+        border-radius: 5px; 
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); 
+    }
+    .travel-grid img:hover {
+        transform: scale(1.1); 
+    }
+    .travel-div h2 {
+        font-size: 30px; 
+        font-weight: bold; 
+    }
+    .travel-div p {
+        font-size: 16px; 
+    }
+    .travel-div img {
+        border: 2px solid #cccccc; 
+        box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1); 
+    }
+    h1{
+        font-size: 30px;
+        font-weight: bold;
+        text-align: center;
+        padding: 10px;
+    }
+    #main p{
+        border: 1px solid #ccc; 
+        background-color: #f9f9f9; 
+        padding: 20px;
+        box-shadow: 2px 2px 5px rgba(0,0,0,0.1); 
+        border-radius: 5px;
+    }
+    .photo{
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        padding: 5px;
+        gap: 2px;
+        border: 2px solid black;
+    }
+}
+@media (max-width: 900px) {
+    main img, main video {
+        border: 3px solid black;
+        padding: 10px;
+        max-width: calc(100% - 40px);
+        box-sizing: border-box;
+        display: block;
+        margin: 20px auto;
+    }
+    h1 {
+        font-size: 40px;
+        padding: 20px;
+        text-align: center;
+        font-weight: bold;
+    }
+    .travel-grid {
+        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+        gap: 20px;
+        padding: 20px;
+        margin: 20px auto;
+    }
+    .travel-div h2, .travel-div p {
+        font-size: 22px;
+        font-weight: bold;
+    }
+    .travel-div p {
+        font-size: 20px;
+    }
+    .photo {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        padding: 5px;
+        gap: 15px;
+    }
+    nav ul {
+        justify-content: space-evenly;
+    }
+    nav ul li a {
+        padding: 10px 20px;
+        font-size: 18px;
+    }
+    .travel-div {
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    }
+    .travel-grid img:hover, .travel-div img {
+        transform: scale(1.05);
+        border: 3px solid #cccccc;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+    }
+    #main p {
+        border: 2px solid #ccc;
+        background-color: #f9f9f9;
+        padding: 25px;
+        box-shadow: 3px 3px 7px rgba(0,0,0,0.15);
+        border-radius: 10px;
+    }
+}
