@@ -239,7 +239,7 @@ body{
         border: 2px solid black;
     }
 }
-@media (max-width: 600px) {
+@media (min-width: 600px) {
     main img, main video {
         border: 2px solid black;
         padding: 5px; 
@@ -321,7 +321,7 @@ body{
         border: 2px solid black;
     }
 }
-@media (max-width: 900px) {
+@media (min-width: 768px) {
     main img, main video {
         border: 3px solid black;
         padding: 10px;
